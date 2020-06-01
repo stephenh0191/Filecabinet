@@ -1,17 +1,15 @@
 !!!
 %hmtl
 %head
-%title FilesCabient | project
-	= stylesheet_link_tag	'application', media: 'all', 'data-turbolinks-track' => true
-	= javascript_include_tag 'application', 'data-turbolinks-track' => true
+	%title FilesCabient | project
+	= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
 	= csrf_meta_tags
-
 
 
 %body
 	%header
 		.header_inner
-			= link to "FilesCabient", root_path, id: 'logo'
+			= link_to "FileCabient", root_path, id: 'logo'
 
 			%nav
 				- if user_signed_in?
@@ -20,7 +18,7 @@
 				- else
 					= link_to "Log in", new_user_session_path
 
-%p.notice= noitce
+%p.notice= notice
 %p.alert= alert
 
 = yield

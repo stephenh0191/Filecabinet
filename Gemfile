@@ -29,8 +29,12 @@ gem 'jbuilder', '~> 2.7'
 gem 'devise', '~> 4.7', '>= 4.7.1'
 gem 'simple_form', '~> 5.0', '>= 5.0.2'
 gem 'haml', '~> 5.1', '>= 5.1.2'
+gem 'js_application_reloader', '~> 0.0.2'
 
 
+gem 'actionpack', '~> 6.0.0'
+gem 'railties', '~> 6.0.0'
+gem 'sprockets', github: 'rails/sprockets', branch: 'master'
 
 
 # Reduces boot times through caching; required in config/boot.rb
