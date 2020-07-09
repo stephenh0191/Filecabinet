@@ -4,7 +4,6 @@
 		%p= simple_format(@doc.content)
 
 		.buttons
-		= link_to "All Docs", docs_path, class: "button"
 		= link_to "Fix Doc", edit_doc_path(@doc), class: "button"
-		= link_to "Trash it", doc_path(@doc), method: :delete, data: {confrim: "Are you sure?"}, class: "button"
+		= link_to "Delete Doc", doc_path(@doc), method: :delete, data: {confrim: "Are you sure?"}, class: "button"
 		 
